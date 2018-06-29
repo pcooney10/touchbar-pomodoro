@@ -1,7 +1,8 @@
 'user strict'
-const { app, BrowserWindow, TouchBar, Tray, Menu } = require('electron')
 const path = require('path')
-const { TouchBarButton, TouchBarLabel, TouchBarSpacer } = TouchBar
+const { app, BrowserWindow, TouchBar, Tray, Menu } = require('electron')
+// const { TouchBarButton, TouchBarLabel, TouchBarSpacer } = TouchBar
+const { TouchBarButton } = TouchBar
 const Stopwatch = require('timer-stopwatch')
 const Hrt = require('human-readable-time')
 let player = require('play-sound')((opts = {}))
